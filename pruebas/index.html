@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API-COLORES</title>
+</head>
+<body>
+    <script>
+        //PRUEBA --> peticion para ver si esta funciona, aqui pruebo los post, delete
+        fetch("/colores/borrar/65eef2eb8adc323c9deb7fd9",{
+            method : "DELETE",
+        })
+        .then(respuesta => respuesta.text())
+        .then(respuesta => console.log(respuesta))
+    </script>
+    
+</body>
+</html>
